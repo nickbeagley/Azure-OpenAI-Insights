@@ -3826,6 +3826,7 @@
                         "name": "modeldeploymentname",
                         "label": "Model Deployment Name",
                         "type": 2,
+                        "isRequired": true,
                         "multiSelect": true,
                         "quote": "'",
                         "delimiter": ",",
@@ -3856,6 +3857,7 @@
                         "name": "modelname",
                         "label": "Model Name",
                         "type": 2,
+                        "isRequired": true,
                         "multiSelect": true,
                         "quote": "'",
                         "delimiter": ",",
@@ -6374,9 +6376,7 @@
                           "size": 3,
                           "showAnalytics": true,
                           "title": "Failed requests",
-                          "timeContext": {
-                            "durationMs": 604800000
-                          },
+                          "timeContextFromParameter": "TimeRange",
                           "showRefreshButton": true,
                           "showExportToExcel": true,
                           "queryType": 0,
